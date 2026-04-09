@@ -1,1 +1,89 @@
-# VocalVitals — AI Voice Health Screening for Parkinson's ^& Diabetes >> write_readme.py && echo. >> write_readme.py && echo ^<div align="center"^> >> write_readme.py && echo   ^<h3^>🎙️ Clinical-grade voice biomarker analysis powered by Claude AI^</h3^> >> write_readme.py && echo   ^<p^>React + FastAPI · Whisper · librosa · parselmouth · Firebase · Twilio^</p^> >> write_readme.py && echo ^</div^> >> write_readme.py && echo. >> write_readme.py && echo --- >> write_readme.py && echo. >> write_readme.py && echo ## 🌟 Overview >> write_readme.py && echo VocalVitals has evolved beyond basic respiratory analysis (coughs and breathing) into an advanced **neurological and systemic disease screening platform**. Our primary focus is now on the early detection and ongoing monitoring of **Parkinson's Disease** and **Diabetes** through subtle vocal biomarkers. >> write_readme.py && echo. >> write_readme.py && echo ### 📞 Live Call Integration for Friends ^& Family >> write_readme.py && echo We have integrated a **Live Call Analysis** feature using Twilio. You can now connect with friends and family over the phone, and our system will perform real-time voice analysis during the call. This provides immediate, live insights into their health status (detecting vocal tremors, speech rate changes, and breathiness associated with Parkinson's and Diabetes neuropathy) to help you care for your loved ones from afar. >> write_readme.py && echo. >> write_readme.py && echo --- >> write_readme.py && echo. >> write_readme.py && echo ## 🚀 Quick Start >> write_readme.py && echo **Ready to run:** >> write_readme.py && echo ```batch >> write_readme.py && echo setup.bat     # First time: verifies setup >> write_readme.py && echo start.bat     # Start backend + frontend >> write_readme.py && echo start_live.bat # Start live call streaming  >> write_readme.py && echo ``` >> write_readme.py && echo **Open:** http://localhost:3000 >> write_readme.py && echo. >> write_readme.py && echo --- >> write_readme.py && echo. >> write_readme.py && echo ## 🔴 Live Call Streaming (Friends ^& Family Integration) >> write_readme.py && echo Real-time phone call analysis with live dashboard updates: >> write_readme.py && echo. >> write_readme.py && echo ```text >> write_readme.py && echo ┌─────────────┐    ┌──────────┐    ┌─────────┐    ┌───────────┐ >> write_readme.py && echo │ Family Call │───▶│  Twilio  │───▶│ Backend │───▶│ Dashboard │ >> write_readme.py && echo │   (Voice)   │    │  Stream  │    │   WS    │    │  /calls   │ >> write_readme.py && echo └─────────────┘    └──────────┘    └─────────┘    └───────────┘ >> write_readme.py && echo ``` >> write_readme.py && echo. >> write_readme.py && echo You can set up Twilio Webhooks to route your loved ones' calls through our Live Dashboard. As you speak with them, VocalVitals analyzes their speech patterns for signs of cognitive and motor function changes. >> write_readme.py && echo. >> write_readme.py && echo ## 🔬 How It Works: Parkinson's ^& Diabetes >> write_readme.py && echo | Disease | Relevant Vocal Biomarkers | Clinical Significance | >> write_readme.py && echo |---|---|---| >> write_readme.py && echo | **Parkinson's** | Jitter, Shimmer, HNR, Pitch Variance | Detects vocal fold rigidity, micro-tremors, and dysphonia. | >> write_readme.py && echo | **Diabetes** | Speech Rate, Pause Frequency, Energy | Detects signs of diabetic neuropathy affecting laryngeal nerves, leading to vocal fatigue. | >> write_readme.py && echo. >> write_readme.py && echo --- >> write_readme.py && echo. >> write_readme.py && echo ## 🛠️ Project Setup >> write_readme.py && echo ### 1. Backend Environment >> write_readme.py && echo ```bash >> write_readme.py && echo cd backend >> write_readme.py && echo python -m venv venv >> write_readme.py && echo venv\Scriptsctivate >> write_readme.py && echo pip install -r requirements.txt >> write_readme.py && echo copy .env.example .env >> write_readme.py && echo uvicorn main:app --reload --port 8000 >> write_readme.py && echo ``` >> write_readme.py && echo. >> write_readme.py && echo ### 2. Frontend Environment >> write_readme.py && echo ```bash >> write_readme.py && echo cd frontend >> write_readme.py && echo npm install >> write_readme.py && echo copy .env.example .env.local >> write_readme.py && echo npm run dev >> write_readme.py && echo ``` >> write_readme.py && echo. >> write_readme.py && echo ### 3. Twilio Configuration (For Live Calls) >> write_readme.py && echo ```bash >> write_readme.py && echo ngrok http 8000 >> write_readme.py && echo ``` >> write_readme.py && echo Configure your Twilio Webhook to point to `https://[your-ngrok-url]/twilio/incoming`. >> write_readme.py && echo. >> write_readme.py && echo --- >> write_readme.py && echo. >> write_readme.py && echo ## ⚠️ Disclaimer >> write_readme.py && echo VocalVitals is an AI screening tool and **NOT** a medical diagnostic device. Always consult a qualified healthcare professional. >> write_readme.py && echo 
+# VocalVitals — AI Voice Health Screening for Parkinson's & Diabetes
+
+<div align="center">
+  <h3>🎙️ Clinical-grade voice biomarker analysis powered by Claude AI</h3>
+  <p>React + FastAPI · Whisper · librosa · parselmouth · Firebase · Twilio</p>
+</div>
+
+---
+
+## 🌟 Overview
+VocalVitals has evolved beyond basic respiratory analysis (coughs and breathing) into an advanced **neurological and systemic disease screening platform**. Our primary focus is now on the early detection and ongoing monitoring of **Parkinson's Disease** and **Diabetes** through subtle vocal biomarkers.
+
+### 📞 Live Call Integration for Friends & Family
+We have integrated a **Live Call Analysis** feature using Twilio. You can now connect with friends and family over the phone, and our system will perform real-time voice analysis during the call. This provides immediate, live insights into their health status (detecting vocal tremors, speech rate changes, and breathiness associated with Parkinson's and Diabetes neuropathy) to help you care for your loved ones from afar.
+
+---
+
+## 🚀 Quick Start (Windows)
+**Ready to run:**
+```batch
+setup.bat     # First time: verifies setup
+start.bat     # Start backend + frontend
+start_live.bat # Start live call streaming 
+```
+**Open:** http://localhost:3000
+
+---
+
+## 🔴 Live Call Streaming (Friends & Family Integration)
+Real-time phone call analysis with live dashboard updates:
+
+```text
+┌─────────────┐    ┌──────────┐    ┌─────────┐    ┌───────────┐
+│ Family Call │───▶│  Twilio  │───▶│ Backend │───▶│ Dashboard │
+│   (Voice)   │    │  Stream  │    │   WS    │    │  /calls   │
+└─────────────┘    └──────────┘    └─────────┘    └───────────┘
+```
+
+You can set up Twilio Webhooks to route your loved ones' calls through our Live Dashboard. As you speak with them, VocalVitals analyzes their speech patterns for signs of cognitive and motor function changes.
+
+## 🔬 How It Works: Parkinson's & Diabetes
+
+| Disease | Relevant Vocal Biomarkers | Clinical Significance |
+|---|---|---|
+| **Parkinson's** | Jitter, Shimmer, HNR, Pitch Variance | Detects vocal fold rigidity, micro-tremors, and dysphonia long before physical tremors appear. |
+| **Diabetes** | Speech Rate, Pause Frequency, Energy | Detects signs of diabetic neuropathy affecting laryngeal nerves, leading to vocal fatigue and muscle weakness. |
+
+---
+
+## 🛠️ Project Setup
+
+### 1. Backend Environment
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+copy .env.example .env
+uvicorn main:app --reload --port 8000
+```
+*Note: Make sure to install Visual C++ Build Tools on Windows if praat-parselmouth fails to install.*
+
+### 2. Frontend Environment
+```bash
+cd frontend
+npm install
+copy .env.example .env.local
+npm run dev
+```
+
+### 3. Twilio Configuration (For Live Calls)
+```bash
+# Expose backend with ngrok
+ngrok http 8000
+```
+Configure your Twilio Webhook to point to `https://[your-ngrok-url]/twilio/incoming`.
+
+---
+
+## 📊 Datasets & Training (Optional)
+If you want to train your own models instead of using our pre-trained weights:
+1. Configure your Kaggle API key (`%USERPROFILE%\.kaggle\kaggle.json`).
+2. Run `python ml/download_datasets.py` to fetch audio samples.
+3. Run `python ml/train_audio_classifier.py` to generate the `.pkl` models for disease classification.
+
+---
+
+## ⚠️ Disclaimer
+VocalVitals is an AI screening tool and **NOT** a medical diagnostic device. Always consult a qualified healthcare professional.
